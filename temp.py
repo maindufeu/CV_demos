@@ -3,10 +3,6 @@ import streamlit as st
 import time
 import os
 
-st.write('Hello World')
-folderoot= os.getcwd()
-st.write(folderoot)
-
 # Set the wide modo on default
 st.set_page_config(page_title="Proyectos Computer Vision",
                    page_icon="👀",

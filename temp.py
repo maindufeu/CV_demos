@@ -16,9 +16,9 @@ st.sidebar.write("El objetivo es probar distintas demos de proyectos de CV basad
 # Opciones de Modelos 
 genre = st.sidebar.selectbox(
     "Selecciona el modelo de CV: ⏬",
-    ('Human Pose', 'Fire Detection', 'Drowsiness',
-      'Count and Tracking', 'Track Across Cameras', 'Emotion Detections',
-      'Satelital Images'))
+    ('Human Pose', 'Fire Detection'))
+
+# , 'Drowsiness','Count and Tracking', 'Track Across Cameras', 'Emotion Detections', 'Satelital Images'
 
 # Select resources
 Folder= {'hp':'Human Pose', 'fd':'Fire Detection', 'dw':'Drowsiness',

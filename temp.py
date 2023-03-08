@@ -77,7 +77,7 @@ else:
 if genre in ('Fire Detection' ,'Human Pose'):
     avi= st.write('')
 else:
-    notavi= st.image("const.jpg")
+    notavi= st.image("/app/cv_demos/const.jpg")
 
 # Get index position
 # Funciona pq el orden de los inputs y outs es el mismo

@@ -44,8 +44,8 @@ folder=  oldpath + "/" + "vidsource" + "/" + viddir
 os.chdir(folder)
 folderoot= os.getcwd()
 opt= os.listdir()
-folinput= folderoot + "/" + opt[0]
-folout= folderoot + "/" + opt[1]
+folinput= folderoot + "/" + opt[1]
+folout= folderoot + "/" + opt[0]
 
 # Get the list of videos in input folder
 os.chdir(folinput)

@@ -16,9 +16,9 @@ st.sidebar.write("El objetivo es probar distintas demos de proyectos de CV basad
 # Opciones de Modelos 
 genre = st.sidebar.selectbox(
     "Selecciona el modelo de CV: ⏬",
-    ('Human Pose', 'Fire Detection'))
+    ('Human Pose', 'Fire Detection', 'Drowsiness'))
 
-# , 'Drowsiness','Count and Tracking', 'Track Across Cameras', 'Emotion Detections', 'Satelital Images'
+# ,'Count and Tracking', 'Track Across Cameras', 'Emotion Detections', 'Satelital Images'
 
 # Select resources
 Folder= {'hp':'Human Pose', 'fd':'Fire Detection', 'dw':'Drowsiness',
@@ -69,12 +69,12 @@ os.chdir(oldpath)
 ###########################################################
 # Select the options between samples, or camera and samples.
 
-if genre in ('Fire Detection','Human Pose'):
+if genre in ('Fire Detection','Human Pose', 'Drowsiness'):
     Opciones= st.sidebar.selectbox('Selecciona el video muestra: ⏬',options=optin)
 else:
     Type= st.sidebar.radio('Selecciona el input: ⏬', ('Muestras', 'Cámara'),horizontal=True)
 
-if genre in ('Fire Detection' ,'Human Pose'):
+if genre in ('Fire Detection' ,'Human Pose', 'Drowsiness'):
     avi= st.write('')
 else:
     notavi= st.image("/app/cv_demos/const.jpg")
@@ -82,7 +82,7 @@ else:
 # Get index position
 # Funciona pq el orden de los inputs y outs es el mismo
 #               🔴Cambiar  al agregar más variables🔴      ######
-if genre in ('Fire Detection','Human Pose'):
+if genre in ('Fire Detection','Human Pose', 'Drowsiness'):
     posinout=optin.index(Opciones)
 else:
     pass
